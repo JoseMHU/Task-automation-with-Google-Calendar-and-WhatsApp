@@ -1,0 +1,6 @@
+.idea
+*.xlsx
+__pycache__
+*.pkl
+*.json
+PyWhatKit_DB.txt
