@@ -155,10 +155,14 @@ def file_update():
             prior_notifications[name] = True
 
     # Delete records
+    list_del = []
     for name in notifications:
-        if name not in data['NOMBRES']:
-            del notifications[name]
-            del prior_notifications[name]
+        if name not in list(data['NOMBRES']):
+            list_del.append(name)
+    for i in list_del:
+        notifications.pop(i)
+        prior_notifications.pop(i)
+    del list_del
 
     with open("modules/data/notifications.pkl", "wb") as file:
         pickle.dump(notifications, file)
