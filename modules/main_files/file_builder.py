@@ -4,6 +4,7 @@ import json
 from datetime import datetime
 import pandas as pd
 
+
 class File:
     def __init__(self, path: str):
         self._path = path
@@ -42,6 +43,7 @@ class PKLFileDF(PKLFile):
         PKLFile.__init__(self, path)
         self.file = pd.DataFrame(self.file)
 
+
 class JsonFile(File):
     def __init__(self, path="modules/settings/config.json"):
         File.__init__(self, path)
@@ -51,6 +53,7 @@ class JsonFile(File):
         else:
             self.found = False
             month = datetime.now().month
+            day = datetime.now().day
             with open("modules/settings/file_path.txt", "r") as file:
                 path_txt = file.readline().rstrip()
                 sheet_name = file.readline()
@@ -58,7 +61,8 @@ class JsonFile(File):
                 'path': path_txt,
                 'sheet_name': sheet_name,
                 'last_modified': os.path.getmtime(path_txt),
-                'month': month
+                'month': month,
+                'day': day
             }
             with open(self._path, "w") as file:
                 json.dump(self.file, file, indent=4)
