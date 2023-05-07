@@ -70,7 +70,7 @@ def prior_notice():
             # We personalize the message
             name = data.file.loc[i, 'NOMBRES']
             precio = data.file.loc[i, 'FACTURA']
-            text = f"""¡Hola {name}! Este es un *mensaje automatizado* creado por el equipo de *Saiyan Vikingo* \n
+            text = f"""¡Hola {name}! Este es un *mensaje automatizado* creado por el equipo de *Saiyan Viking* \n
 Para recordarte que dentro de una semana deberás pagar un monto de *{precio}* $DOP 
 por los servicios del presente mes. \n
 Gracias por preferirnos.\n
@@ -95,7 +95,7 @@ def notice():
             # We personalize the message
             name = data.file.loc[i, 'NOMBRES']
             precio = data.file.loc[i, 'FACTURA']
-            text = f"""¡Hola {name}! Este es un *mensaje automatizado* creado por el equipo de *Saiyan Vikingo* \n
+            text = f"""¡Hola {name}! Este es un *mensaje automatizado* creado por el equipo de *Saiyan Viking* \n
 Para recordarte que hoy deberás pagar un monto de *{precio}* $DOP \n
 por los servicios del presente mes. \n
 Gracias por preferirnos.\n
