@@ -46,9 +46,6 @@ to my GitHub profile. To make the code useful, the development was focused to he
 friend's **[Personal Trainer project (Saiyan Viking)](https://www.instagram.com/saiyan_vikingoficial/)**.
 
 ## Current status of the project
-I am currently working on an update to add a new function to the project: *Sending daily messages to clients to ask for 
-the hour of attendance at the GYM* (at the request of my friend for the needs he has in his personal business).
-
 In the future I am thinking of creating a repository for the GUI management of a simple database to pass the 
 administration from Excel to MongoDB, at that point, I will update this repository to add the option of reading to the 
 database.
