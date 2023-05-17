@@ -10,3 +10,4 @@ if __name__ == "__main__":
     # A direct call is made to these functions to be able to disable them if necessary.
     notice()
     prior_notice()
+
