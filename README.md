@@ -44,8 +44,3 @@ permissions to the Google Calendar API for your personal account.
 This repository was created for academic purposes to practice automating processes with Python and to add more content 
 to my GitHub profile. To make the code useful, the development was focused to help with the automation of tasks of a 
 friend's **[Personal Trainer project (Saiyan Viking)](https://www.instagram.com/saiyan_vikingoficial/)**.
-
-## Current status of the project
-In the future I am thinking of creating a repository for the GUI management of a simple database to pass the 
-administration from Excel to MongoDB, at that point, I will update this repository to add the option of reading to the 
-database.
